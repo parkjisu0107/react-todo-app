@@ -28,3 +28,16 @@ $ npm install 명령을 터미널에서 실행하여 라이브러리 설치
    $ npm install @mui/material @emotion/react @emotion/styled
    $ npm install @mui/icons-material
    $ npm install react-router-dom
+
+## 리액트 라우터 설정
+
+- index.js에 BrowserRouter 컴포넌트로 App 감싸기.
+
+```javascript
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);
+```
